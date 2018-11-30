@@ -1,0 +1,16 @@
+	<table>
+		<thead>
+			<tr>
+				<th>S.no</th>
+				<th>Name</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="i in json.customers">
+				<td>{{$index}}</td>
+				<td>{{i.name}}</td>
+				<td><a href="#/orders/{{i.id}}">View Orders</td>
+			</tr>
+		</tbody>
+	</table>

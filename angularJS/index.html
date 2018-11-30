@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular js</title>
+	<style>
+		table{
+			width: 500px;
+			height:500px;
+		}
+		table,td,tr,th{
+			border:1px solid;
+		}
+		tr{
+			text-align: center;
+		}
+	</style>
+</head>
+<body ng-app="myApp" ng-controller="myctrl">
+	<table>
+		<thead>
+			<tr>
+				<th>S.no</th>
+				<th>Name</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="i in json.customers">
+				<td>{{$index}}</td>
+				<td>{{i.name}}</td>
+				<td><a href="#/orders/{{i.id}}">View Orders</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-route.js"></script>
+	<script src="app/module.js"></script>
+	<script src="app/controllers/myctrl.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+(function(){
+	myApp.controller('myctrl',function($scope){
+		$scope.name="Gurjot"
+		$scope.json={
+			"customers":[
+				{
+					"id":1,
+					"name":"gurjot",
+					"orders":[{
+						"product":"jin",
+						"price":100
+					}]
+				},
+				{
+					"id":2,
+					"name":"singh",
+					"orders":[{
+						"product":"king",
+						"price":100
+					}]
+				},
+				{
+					"id":3,
+					"name":"shashi",
+					"orders":[{
+						"product":"shoes",
+						"price":100
+					}]
+				},
+				{
+					"id":4,
+					"name":"jyoti",
+					"orders":[{
+						"product":"ququ",
+						"price":100
+					}]
+				}
+			]}});
+}());
